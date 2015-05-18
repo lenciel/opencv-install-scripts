@@ -48,4 +48,6 @@ make -j 4
 sudo make install
 sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 sudo ldconfig
+# http://stackoverflow.com/questions/12689304/ctypes-error-libdc1394-error-failed-to-initialize-libdc1394
+sudo ln /dev/null /dev/raw1394
 echo "OpenCV" $version "ready to be used"
